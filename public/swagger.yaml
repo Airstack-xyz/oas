@@ -8,7 +8,7 @@ info:
     Some client libraries:
       - [TypeScript](https://www.npmjs.com/package/@standard-crypto/farcaster-js-hub-rest)
 servers:
-  - url: https://hubs.dev.airstack.xyz
+  - url: https://hubs.airstack.xyz
 security:
   - ApiKeyAuth: []
 paths:

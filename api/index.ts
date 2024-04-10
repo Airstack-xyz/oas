@@ -12,7 +12,7 @@ const swaggerDocument = {
   },
   servers: [
     {
-      url: "https://hubs.dev.airstack.xyz",
+      url: "https://hubs.airstack.xyz",
     },
   ],
   security: [

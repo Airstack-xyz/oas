@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://hubs.dev.airstack.xyz"
+      "url": "https://hubs.airstack.xyz"
     }
   ],
   "security": [
@@ -23,9 +23,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Info"
-        ],
+        "tags": ["Info"],
         "summary": "Sync Methods",
         "operationId": "GetInfo",
         "parameters": [
@@ -63,9 +61,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Casts"
-        ],
+        "tags": ["Casts"],
         "summary": "Get a cast by its FID and Hash.",
         "operationId": "GetCastById",
         "parameters": [
@@ -115,9 +111,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Casts"
-        ],
+        "tags": ["Casts"],
         "summary": "Fetch all casts authored by an FID.",
         "operationId": "ListCastsByFid",
         "parameters": [
@@ -147,10 +141,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -182,9 +173,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Casts"
-        ],
+        "tags": ["Casts"],
         "summary": "Fetch all casts that mention an FID",
         "operationId": "ListCastsByMention",
         "parameters": [
@@ -214,10 +203,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -249,9 +235,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Casts"
-        ],
+        "tags": ["Casts"],
         "summary": "Fetch all casts by parent cast's FID and Hash OR by the parent's URL",
         "operationId": "ListCastsByParent",
         "parameters": [
@@ -297,10 +281,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -332,9 +313,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Reactions"
-        ],
+        "tags": ["Reactions"],
         "summary": "Get a reaction by its created FID and target Cast.",
         "operationId": "GetReactionById",
         "parameters": [
@@ -399,9 +378,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Reactions"
-        ],
+        "tags": ["Reactions"],
         "summary": "Get all reactions to a cast",
         "operationId": "ListReactionsByCast",
         "parameters": [
@@ -448,10 +425,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -483,9 +457,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Reactions"
-        ],
+        "tags": ["Reactions"],
         "summary": "Get all reactions by an FID",
         "operationId": "ListReactionsByFid",
         "parameters": [
@@ -523,10 +495,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -558,9 +527,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Reactions"
-        ],
+        "tags": ["Reactions"],
         "operationId": "ListReactionsByTarget",
         "summary": "Get all reactions to a target URL",
         "parameters": [
@@ -599,10 +566,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -634,9 +598,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Links"
-        ],
+        "tags": ["Links"],
         "summary": "Get a link by its FID and target FID.",
         "operationId": "GetLinkById",
         "parameters": [
@@ -692,9 +654,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Links"
-        ],
+        "tags": ["Links"],
         "summary": "Get all links from a source FID",
         "operationId": "ListLinksByFid",
         "parameters": [
@@ -732,10 +692,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -767,9 +724,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Links"
-        ],
+        "tags": ["Links"],
         "summary": "Get all links to a target FID",
         "operationId": "ListLinksByTargetFid",
         "parameters": [
@@ -807,10 +762,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -842,9 +794,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "UserData"
-        ],
+        "tags": ["UserData"],
         "summary": "Get UserData for a FID.",
         "description": "**Note:** one of two different response schemas is returned based on whether the caller provides the `user_data_type` parameter. If included, a single `UserDataAdd` message is returned (or a `not_found` error). If omitted, a paginated list of `UserDataAdd` messages is returned instead",
         "operationId": "GetUserDataByFid",
@@ -889,10 +839,7 @@
                     },
                     {
                       "type": "object",
-                      "required": [
-                        "messages",
-                        "nextPageToken"
-                      ],
+                      "required": ["messages", "nextPageToken"],
                       "properties": {
                         "messages": {
                           "type": "array",
@@ -925,9 +872,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "FIDs"
-        ],
+        "tags": ["FIDs"],
         "operationId": "ListFids",
         "summary": "Get a list of all the FIDs",
         "parameters": [
@@ -965,9 +910,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Storage"
-        ],
+        "tags": ["Storage"],
         "operationId": "GetStorageLimitsByFid",
         "summary": "Get an FID's storage limits.",
         "parameters": [
@@ -1005,9 +948,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Usernames"
-        ],
+        "tags": ["Usernames"],
         "operationId": "ListUsernameProofsByFid",
         "summary": "Get a list of proofs provided by an FID",
         "parameters": [
@@ -1045,9 +986,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Usernames"
-        ],
+        "tags": ["Usernames"],
         "summary": "Get an proof for a username by the Farcaster username",
         "operationId": "GetUsernameProof",
         "parameters": [
@@ -1093,9 +1032,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "Verifications"
-        ],
+        "tags": ["Verifications"],
         "operationId": "ListVerificationsByFid",
         "summary": "Get a list of verifications provided by an FID",
         "parameters": [
@@ -1133,10 +1070,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": [
-                    "messages",
-                    "nextPageToken"
-                  ],
+                  "required": ["messages", "nextPageToken"],
                   "type": "object",
                   "properties": {
                     "messages": {
@@ -1169,9 +1103,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "OnChainEvents"
-        ],
+        "tags": ["OnChainEvents"],
         "summary": "Get an on chain ID Registry Event for a given Address",
         "operationId": "GetOnChainIdRegistrationByAddress",
         "parameters": [
@@ -1210,9 +1142,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "OnChainEvents"
-        ],
+        "tags": ["OnChainEvents"],
         "summary": "Get a list of on-chain events provided by an FID",
         "operationId": "ListOnChainEventsByFid",
         "parameters": [
@@ -1250,9 +1180,7 @@
                       }
                     }
                   },
-                  "required": [
-                    "events"
-                  ]
+                  "required": ["events"]
                 }
               }
             }
@@ -1270,9 +1198,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "OnChainEvents"
-        ],
+        "tags": ["OnChainEvents"],
         "summary": "Get a list of signers provided by an FID",
         "description": "**Note:** one of two different response schemas is returned based on whether the caller provides the `signer` parameter. If included, a single `OnChainEventSigner` message is returned (or a `not_found` error). If omitted, a non-paginated list of `OnChainEventSigner` messages is returned instead",
         "operationId": "ListOnChainSignersByFid",
@@ -1317,9 +1243,7 @@
                           }
                         }
                       },
-                      "required": [
-                        "events"
-                      ]
+                      "required": ["events"]
                     }
                   ]
                 }
@@ -1334,9 +1258,7 @@
     },
     "/v1/submitMessage": {
       "post": {
-        "tags": [
-          "SubmitMessage"
-        ],
+        "tags": ["SubmitMessage"],
         "summary": "Submit a signed protobuf-serialized message to the Hub",
         "operationId": "SubmitMessage",
         "security": [
@@ -1376,9 +1298,7 @@
     },
     "/v1/validateMessage": {
       "post": {
-        "tags": [
-          "ValidateMessage"
-        ],
+        "tags": ["ValidateMessage"],
         "summary": "Validate a signed protobuf-serialized message with the Hub",
         "operationId": "ValidateMessage",
         "security": [
@@ -1423,9 +1343,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "HubEvents"
-        ],
+        "tags": ["HubEvents"],
         "operationId": "ListEvents",
         "summary": "Get a page of Hub events",
         "parameters": [
@@ -1457,10 +1375,7 @@
                       }
                     }
                   },
-                  "required": [
-                    "nextPageEventId",
-                    "events"
-                  ]
+                  "required": ["nextPageEventId", "events"]
                 }
               }
             }
@@ -1478,9 +1393,7 @@
             "ApiKeyAuth": []
           }
         ],
-        "tags": [
-          "HubEvents"
-        ],
+        "tags": ["HubEvents"],
         "operationId": "GetEventById",
         "summary": "Get an event by its ID",
         "parameters": [
@@ -1567,16 +1480,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -1643,9 +1552,7 @@
             "$ref": "#/components/schemas/CastId"
           }
         },
-        "required": [
-          "castId"
-        ]
+        "required": ["castId"]
       },
       "CastRemove": {
         "allOf": [
@@ -1667,25 +1574,18 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
       "CastId": {
         "description": "Identifier used to look up a Cast",
-        "required": [
-          "fid",
-          "hash"
-        ],
+        "required": ["fid", "hash"],
         "type": "object",
         "properties": {
           "fid": {
@@ -1713,16 +1613,10 @@
             "format": "byte"
           }
         },
-        "required": [
-          "targetHash"
-        ]
+        "required": ["targetHash"]
       },
       "DbStats": {
-        "required": [
-          "numFidEvents",
-          "numFnameEvents",
-          "numMessages"
-        ],
+        "required": ["numFidEvents", "numFnameEvents", "numMessages"],
         "type": "object",
         "properties": {
           "numMessages": {
@@ -1776,9 +1670,7 @@
             "type": "string"
           },
           "metadata": {
-            "required": [
-              "errcode"
-            ],
+            "required": ["errcode"],
             "type": "object",
             "properties": {
               "errcode": {
@@ -1817,10 +1709,7 @@
             "format": "byte"
           }
         },
-        "required": [
-          "fids",
-          "nextPageToken"
-        ]
+        "required": ["fids", "nextPageToken"]
       },
       "FrameActionBody": {
         "description": "A Farcaster Frame action",
@@ -1841,19 +1730,13 @@
             "$ref": "#/components/schemas/CastId"
           }
         },
-        "required": [
-          "url",
-          "buttonIndex",
-          "castId"
-        ]
+        "required": ["url", "buttonIndex", "castId"]
       },
       "HashScheme": {
         "type": "string",
         "description": "Type of hashing scheme used to produce a digest of MessageData. - HASH_SCHEME_BLAKE3: Default scheme for hashing MessageData\n",
         "default": "HASH_SCHEME_BLAKE3",
-        "enum": [
-          "HASH_SCHEME_BLAKE3"
-        ]
+        "enum": ["HASH_SCHEME_BLAKE3"]
       },
       "HubEvent": {
         "oneOf": [
@@ -1899,11 +1782,7 @@
             "$ref": "#/components/schemas/MergeMessageBody"
           }
         },
-        "required": [
-          "type",
-          "id",
-          "mergeMessageBody"
-        ]
+        "required": ["type", "id", "mergeMessageBody"]
       },
       "HubEventPruneMessage": {
         "type": "object",
@@ -1920,11 +1799,7 @@
             "$ref": "#/components/schemas/PruneMessageBody"
           }
         },
-        "required": [
-          "type",
-          "id",
-          "pruneMessageBody"
-        ]
+        "required": ["type", "id", "pruneMessageBody"]
       },
       "HubEventRevokeMessage": {
         "type": "object",
@@ -1941,11 +1816,7 @@
             "$ref": "#/components/schemas/RevokeMessageBody"
           }
         },
-        "required": [
-          "type",
-          "id",
-          "revokeMessageBody"
-        ]
+        "required": ["type", "id", "revokeMessageBody"]
       },
       "HubEventMergeUsernameProof": {
         "type": "object",
@@ -1962,11 +1833,7 @@
             "$ref": "#/components/schemas/MergeUserNameProofBody"
           }
         },
-        "required": [
-          "type",
-          "id",
-          "mergeUsernameProofBody"
-        ]
+        "required": ["type", "id", "mergeUsernameProofBody"]
       },
       "HubEventMergeOnChainEvent": {
         "type": "object",
@@ -1983,11 +1850,7 @@
             "$ref": "#/components/schemas/MergeOnChainEventBody"
           }
         },
-        "required": [
-          "type",
-          "id",
-          "mergeOnChainEventBody"
-        ]
+        "required": ["type", "id", "mergeOnChainEventBody"]
       },
       "HubInfoResponse": {
         "title": "Response Types for the Sync RPC Methods",
@@ -2047,12 +1910,7 @@
             "example": "0x00000000fcd5a8e45785c8a4b9a718c9348e4f18"
           }
         },
-        "required": [
-          "to",
-          "from",
-          "eventType",
-          "recoveryAddress"
-        ]
+        "required": ["to", "from", "eventType", "recoveryAddress"]
       },
       "IdRegisterEventType": {
         "type": "string",
@@ -2083,16 +1941,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -2114,10 +1968,7 @@
             "format": "uint64"
           }
         },
-        "required": [
-          "type",
-          "targetFid"
-        ]
+        "required": ["type", "targetFid"]
       },
       "LinkRemove": {
         "allOf": [
@@ -2139,16 +1990,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -2156,9 +2003,7 @@
         "type": "string",
         "description": "Type of Link.\n- follow: Follow another user",
         "default": "follow",
-        "enum": [
-          "follow"
-        ]
+        "enum": ["follow"]
       },
       "MergeMessageBody": {
         "type": "object",
@@ -2173,10 +2018,7 @@
             }
           }
         },
-        "required": [
-          "message",
-          "deletedMessages"
-        ]
+        "required": ["message", "deletedMessages"]
       },
       "MergeOnChainEventBody": {
         "type": "object",
@@ -2185,9 +2027,7 @@
             "$ref": "#/components/schemas/OnChainEvent"
           }
         },
-        "required": [
-          "onChainEvent"
-        ]
+        "required": ["onChainEvent"]
       },
       "MergeUserNameProofBody": {
         "type": "object",
@@ -2259,9 +2099,7 @@
                 }
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           },
           {
             "$ref": "#/components/schemas/MessageCommon"
@@ -2305,11 +2143,7 @@
         ]
       },
       "MessageDataCommon": {
-        "required": [
-          "fid",
-          "network",
-          "timestamp"
-        ],
+        "required": ["fid", "network", "timestamp"],
         "type": "object",
         "properties": {
           "fid": {
@@ -2336,9 +2170,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "castAddBody"
-            ],
+            "required": ["castAddBody"],
             "properties": {
               "castAddBody": {
                 "$ref": "#/components/schemas/CastAddBody"
@@ -2354,9 +2186,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "castRemoveBody"
-            ],
+            "required": ["castRemoveBody"],
             "properties": {
               "castRemoveBody": {
                 "$ref": "#/components/schemas/CastRemoveBody"
@@ -2372,9 +2202,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "frameActionBody"
-            ],
+            "required": ["frameActionBody"],
             "properties": {
               "frameActionBody": {
                 "$ref": "#/components/schemas/FrameActionBody"
@@ -2390,9 +2218,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "linkBody"
-            ],
+            "required": ["linkBody"],
             "properties": {
               "linkBody": {
                 "$ref": "#/components/schemas/LinkBody"
@@ -2408,9 +2234,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "reactionBody"
-            ],
+            "required": ["reactionBody"],
             "properties": {
               "reactionBody": {
                 "$ref": "#/components/schemas/ReactionBody"
@@ -2426,9 +2250,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "userDataBody"
-            ],
+            "required": ["userDataBody"],
             "properties": {
               "userDataBody": {
                 "$ref": "#/components/schemas/UserDataBody"
@@ -2444,9 +2266,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "usernameProofBody"
-            ],
+            "required": ["usernameProofBody"],
             "properties": {
               "usernameProofBody": {
                 "$ref": "#/components/schemas/UserNameProof"
@@ -2462,9 +2282,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "verificationAddEthAddressBody"
-            ],
+            "required": ["verificationAddEthAddressBody"],
             "properties": {
               "verificationAddEthAddressBody": {
                 "$ref": "#/components/schemas/VerificationAddEthAddressBody"
@@ -2480,9 +2298,7 @@
           },
           {
             "type": "object",
-            "required": [
-              "verificationRemoveBody"
-            ],
+            "required": ["verificationRemoveBody"],
             "properties": {
               "verificationRemoveBody": {
                 "$ref": "#/components/schemas/VerificationRemoveBody"
@@ -2592,9 +2408,7 @@
                 "$ref": "#/components/schemas/SignerEventBody"
               }
             },
-            "required": [
-              "signerEventBody"
-            ]
+            "required": ["signerEventBody"]
           }
         ]
       },
@@ -2610,9 +2424,7 @@
                 "$ref": "#/components/schemas/SignerMigratedEventBody"
               }
             },
-            "required": [
-              "signerMigratedEventBody"
-            ]
+            "required": ["signerMigratedEventBody"]
           }
         ]
       },
@@ -2628,9 +2440,7 @@
                 "$ref": "#/components/schemas/IdRegisterEventBody"
               }
             },
-            "required": [
-              "idRegisterEventBody"
-            ]
+            "required": ["idRegisterEventBody"]
           }
         ]
       },
@@ -2646,9 +2456,7 @@
                 "$ref": "#/components/schemas/StorageRentEventBody"
               }
             },
-            "required": [
-              "storageRentEventBody"
-            ]
+            "required": ["storageRentEventBody"]
           }
         ]
       },
@@ -2669,9 +2477,7 @@
             "$ref": "#/components/schemas/Message"
           }
         },
-        "required": [
-          "message"
-        ]
+        "required": ["message"]
       },
       "Reaction": {
         "allOf": [
@@ -2693,16 +2499,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -2721,9 +2523,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type"
-        ]
+        "required": ["type"]
       },
       "ReactionRemove": {
         "allOf": [
@@ -2737,9 +2537,7 @@
                 "$ref": "#/components/schemas/MessageDataReaction"
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -2747,10 +2545,7 @@
         "type": "string",
         "description": "Type of Reaction.\n- REACTION_TYPE_LIKE: Like the target cast\n - REACTION_TYPE_RECAST: Share target cast to the user's audience",
         "default": "REACTION_TYPE_LIKE",
-        "enum": [
-          "REACTION_TYPE_LIKE",
-          "REACTION_TYPE_RECAST"
-        ]
+        "enum": ["REACTION_TYPE_LIKE", "REACTION_TYPE_RECAST"]
       },
       "RevokeMessageBody": {
         "type": "object",
@@ -2759,18 +2554,13 @@
             "$ref": "#/components/schemas/Message"
           }
         },
-        "required": [
-          "message"
-        ]
+        "required": ["message"]
       },
       "SignatureScheme": {
         "type": "string",
         "description": "Type of signature scheme used to sign the Message hash\n- SIGNATURE_SCHEME_ED25519: Ed25519 signature (default)\n - SIGNATURE_SCHEME_EIP712: ECDSA signature using EIP-712 scheme",
         "default": "SIGNATURE_SCHEME_ED25519",
-        "enum": [
-          "SIGNATURE_SCHEME_ED25519",
-          "SIGNATURE_SCHEME_EIP712"
-        ]
+        "enum": ["SIGNATURE_SCHEME_ED25519", "SIGNATURE_SCHEME_EIP712"]
       },
       "SignerEventBody": {
         "type": "object",
@@ -2796,13 +2586,7 @@
             "format": "int64"
           }
         },
-        "required": [
-          "key",
-          "keyType",
-          "eventType",
-          "metadata",
-          "metadataType"
-        ]
+        "required": ["key", "keyType", "eventType", "metadata", "metadataType"]
       },
       "SignerEventType": {
         "type": "string",
@@ -2821,9 +2605,7 @@
             "format": "int64"
           }
         },
-        "required": [
-          "migratedAt"
-        ]
+        "required": ["migratedAt"]
       },
       "StorageLimit": {
         "type": "object",
@@ -2836,10 +2618,7 @@
             "format": "uint64"
           }
         },
-        "required": [
-          "storeType",
-          "limit"
-        ]
+        "required": ["storeType", "limit"]
       },
       "StorageLimitsResponse": {
         "type": "object",
@@ -2851,9 +2630,7 @@
             }
           }
         },
-        "required": [
-          "limits"
-        ]
+        "required": ["limits"]
       },
       "StorageRentEventBody": {
         "type": "object",
@@ -2872,11 +2649,7 @@
             "format": "int64"
           }
         },
-        "required": [
-          "payer",
-          "units",
-          "expiry"
-        ]
+        "required": ["payer", "units", "expiry"]
       },
       "StoreType": {
         "type": "string",
@@ -2898,9 +2671,7 @@
             "format": "uri"
           }
         },
-        "required": [
-          "url"
-        ]
+        "required": ["url"]
       },
       "UserDataAdd": {
         "allOf": [
@@ -2922,16 +2693,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -2947,10 +2714,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "value"
-        ]
+        "required": ["type", "value"]
       },
       "UserDataType": {
         "type": "string",
@@ -2992,14 +2756,7 @@
             "$ref": "#/components/schemas/UserNameType"
           }
         },
-        "required": [
-          "timestamp",
-          "name",
-          "owner",
-          "signature",
-          "fid",
-          "type"
-        ]
+        "required": ["timestamp", "name", "owner", "signature", "fid", "type"]
       },
       "UsernameProofsResponse": {
         "type": "object",
@@ -3011,17 +2768,12 @@
             }
           }
         },
-        "required": [
-          "proofs"
-        ]
+        "required": ["proofs"]
       },
       "UserNameType": {
         "type": "string",
         "default": "USERNAME_TYPE_FNAME",
-        "enum": [
-          "USERNAME_TYPE_FNAME",
-          "USERNAME_TYPE_ENS_L1"
-        ]
+        "enum": ["USERNAME_TYPE_FNAME", "USERNAME_TYPE_ENS_L1"]
       },
       "ValidateMessageResponse": {
         "type": "object",
@@ -3033,10 +2785,7 @@
             "$ref": "#/components/schemas/Message"
           }
         },
-        "required": [
-          "valid",
-          "message"
-        ]
+        "required": ["valid", "message"]
       },
       "Verification": {
         "allOf": [
@@ -3058,16 +2807,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -3092,11 +2837,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "address",
-          "ethSignature",
-          "blockHash"
-        ]
+        "required": ["address", "ethSignature", "blockHash"]
       },
       "VerificationRemove": {
         "allOf": [
@@ -3118,16 +2859,12 @@
                         "$ref": "#/components/schemas/MessageType"
                       }
                     },
-                    "required": [
-                      "type"
-                    ]
+                    "required": ["type"]
                   }
                 ]
               }
             },
-            "required": [
-              "data"
-            ]
+            "required": ["data"]
           }
         ]
       },
@@ -3141,9 +2878,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "address"
-        ]
+        "required": ["address"]
       }
     },
     "responses": {
