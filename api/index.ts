@@ -2973,7 +2973,7 @@ const CSS_URL =
 const app = express();
 app.use(express.json());
 app.use(
-  "/api-docs",
+  "/",
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocument, {
     customCssUrl: CSS_URL,
