@@ -12,30 +12,6 @@ servers:
 security:
   - ApiKeyAuth: []
 paths:
-  /v1/info:
-    get:
-      security:
-        - ApiKeyAuth: []
-      tags:
-        - Info
-      summary: Sync Methods
-      operationId: GetInfo
-      parameters:
-        - name: dbstats
-          in: query
-          description: Whether to return DB stats
-          required: true
-          schema:
-            type: boolean
-      responses:
-        200:
-          description: A successful response.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/HubInfoResponse"
-        default:
-          $ref: "#/components/responses/ErrorResponse"
   /v1/castById:
     get:
       security:
