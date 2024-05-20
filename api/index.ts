@@ -2929,15 +2929,153 @@ const swaggerDocument = {
   },
 };
 
+const webhooksSwaggerDocument = {
+  openapi: "3.0.1",
+  info: {
+    title: "Farcaster Webhooks API",
+    version: "1.0",
+    description:
+      "Perform basic queries of Farcaster state via the REST API of a Farcaster hub. See the [Farcaster docs](https://www.thehubble.xyz/docs/httpapi/httpapi.html) for more details. Some client libraries:\n  - [TypeScript](https://www.npmjs.com/package/@standard-crypto/farcaster-js-hub-rest)\n",
+  },
+  servers: [
+    {
+      url: "https://webhooks.airstack.xyz",
+    },
+  ],
+  security: [
+    {
+      ApiKeyAuth: [],
+    },
+  ],
+  paths: {
+    "api/v1/subscriptions": {
+      post: {
+        security: [
+          {
+            ApiKeyAuth: [],
+          },
+        ],
+        tags: ["Subscriptions"],
+        summary: "Create a new webhook subscriptions",
+        operationId: "subscriptionsCreate",
+        parameters: [
+          {
+            name: "endpoint",
+            in: "query",
+            description:
+              "The endpoint that the webhook will push data to. For testing, you can use [webhook.site](https://webhook.site)",
+            required: true,
+            schema: {
+              type: "string",
+            },
+            example: 6833,
+          },
+          {
+            name: "authentication",
+            in: "query",
+            description: "The cast's hash",
+            required: true,
+            schema: {
+              pattern: "^0x[0-9a-fA-F]{40}$",
+              type: "string",
+            },
+            example: "0xa48dd46161d8e57725f5e26e34ec19c13ff7f3b9",
+          },
+          {
+            name: "filter_config",
+            in: "query",
+            description: "The cast's hash",
+            required: true,
+            schema: {
+              required: ["eventTypes"],
+              type: "object",
+              properties: {
+                eventTypes: {
+                  type: "array",
+                  items: {
+                    type: "string",
+                  },
+                },
+                filter: {
+                  type: "object",
+                },
+              },
+            },
+          },
+          {
+            name: "retry_config",
+            in: "query",
+            description: "The cast's hash",
+            required: true,
+            schema: {
+              required: ["eventTypes"],
+              type: "object",
+              properties: {
+                duration: {
+                  type: "string",
+                },
+                interval_seconds: {
+                  type: "integer",
+                },
+                retry_count: {
+                  type: "integer",
+                },
+                type: {
+                  type: "string",
+                },
+              },
+            },
+          },
+        ],
+        responses: {
+          "200": {
+            description: "The requested Cast.",
+            content: {
+              "application/json": {
+                schema: {
+                  type: "string",
+                },
+              },
+            },
+          },
+          default: {
+            type: "string",
+          },
+        },
+      },
+    },
+  },
+  components: {
+    securitySchemes: {
+      ApiKeyAuth: {
+        type: "apiKey",
+        in: "header",
+        name: "Authentication",
+      },
+    },
+  },
+};
+
 const CSS_URL =
   "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 
 const app = express();
 app.use(express.json());
+// Hubs API
 app.use(
   "/",
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocument, {
+    customCssUrl: CSS_URL,
+    customCss:
+      ".swagger-ui .opblock .opblock-summary-path-description-wrapper { align-items: center; display: flex; flex-wrap: wrap; gap: 0 10px; padding: 0 10px; width: 100%; }",
+  })
+);
+// Webhooks API
+app.use(
+  "/webhooks",
+  swaggerUi.serve,
+  swaggerUi.setup(webhooksSwaggerDocument, {
     customCssUrl: CSS_URL,
     customCss:
       ".swagger-ui .opblock .opblock-summary-path-description-wrapper { align-items: center; display: flex; flex-wrap: wrap; gap: 0 10px; padding: 0 10px; width: 100%; }",
