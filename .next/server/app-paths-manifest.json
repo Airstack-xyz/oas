@@ -1,0 +1,4 @@
+{
+  "/webhooks/page": "app/webhooks/page.js",
+  "/hubs/page": "app/hubs/page.js"
+}
