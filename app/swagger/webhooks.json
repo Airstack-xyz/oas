@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://webhooks.uat.airstack.xyz"
+      "url": "https://webhooks.airstack.xyz"
     }
   ],
   "security": [
@@ -103,9 +103,9 @@
                 },
                 "example": {
                   "status": true,
-                  "subscription_id": "01HYCNMKBZJP6HXS164RYMY7ZY",
+                  "webhook_id": "01HYCNMKBZJP6HXS164RYMY7ZY",
                   "portal_link": "https://apiserver.instance-fm94fpopa.hc-fhtewk6q9.us-east-2.aws.f2e0a955bb84.cloud/portal?token=q2SOhdM1Oz7Hf5N90tXLrnoT",
-                  "message": "Successfully created subscription",
+                  "message": "Successfully created webhook",
                   "authentication": {
                     "api_key": {
                       "header_name": "<string>",
@@ -157,7 +157,7 @@
         },
         "responses": {
           "200": {
-            "description": "The requested Cast.",
+            "description": "Status whether the filter configuration is valid or not.",
             "content": {
               "application/json": {
                 "schema": {
@@ -186,7 +186,7 @@
         ],
         "tags": ["Webhooks"],
         "summary": "Delete an existing webhook.",
-        "operationId": "subscriptionsCreate",
+        "operationId": "subscriptionsDelete",
         "parameters": [
           {
             "name": "webhook_id",
